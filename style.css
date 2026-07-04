@@ -243,6 +243,7 @@ h1, h2, h3 {
 .mockup {
   position: relative;
   z-index: 2;
+  width: 100%;
   transform: perspective(1000px) rotateY(-8deg) rotateX(4deg);
   transform-style: preserve-3d;
   will-change: transform;
@@ -666,7 +667,7 @@ h1, h2, h3 {
 
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 4rem; }
+  .hero__inner { grid-template-columns: 1fr; padding-top: 4rem; }
   .mockup { transform: none; }
   .features__grid { grid-template-columns: 1fr; }
   .features__card--large { grid-column: span 1; }
