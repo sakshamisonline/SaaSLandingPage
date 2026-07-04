@@ -4,7 +4,7 @@ A modern, animated landing page concept for a fictional project management SaaS 
 
 > ⚠️ **Note:** This is a self-initiated portfolio project, not a real product or client project. "Prodigy," the pricing, testimonials, and company logos are fictional and used only to demonstrate design and animation skills.
 
-![Prodigy landing page preview](assets/screenshots/hero.png)
+![Prodigy Landing page](https://raw.githubusercontent.com/sakshamisonline/SaaSLandingPage/main/preview.png)
 
 ## 🔗 Live Demo
 
