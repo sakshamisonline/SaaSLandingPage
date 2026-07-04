@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prodigy — Less chaos. More done.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Miranda+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#" class="nav__logo">Prodigy<span>.</span></a>
+    <nav class="nav__links">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <div class="nav__ctas">
+      <a href="#" class="nav__login">Log in</a>
+      <a href="#" class="btn btn--amber btn--small">Get started free</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO SCROLL SCENE -->
+  <div class="hero-scene" id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg-grid" aria-hidden="true"></div>
+    <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+    <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__content">
+      <div class="hero__badge">✦ Now in public beta</div>
+      <h1 class="hero__title">
+        Less chaos.<br><span class="hero__title--accent">More done.</span>
+      </h1>
+      <p class="hero__sub">Prodigy brings your tasks, team, and timelines into one sharp view — so nothing slips and no one's guessing what's next.</p>
+      <div class="hero__actions">
+        <a href="#" class="btn btn--amber">Start for free</a>
+        <a href="#" class="btn btn--ghost">Watch demo →</a>
+      </div>
+      <p class="hero__social-proof"><span>4,200+</span> teams already shipping faster</p>
+    </div>
+
+    <!-- DASHBOARD MOCKUP -->
+    <div class="mockup" aria-hidden="true">
+      <div class="mockup__window">
+        <div class="mockup__bar">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+          <span class="mockup__title">Prodigy — Q3 Launch</span>
+        </div>
+        <div class="mockup__body">
+          <!-- Sidebar -->
+          <div class="mockup__sidebar">
+            <div class="sidebar__logo">P.</div>
+            <div class="sidebar__nav">
+              <div class="sidebar__item sidebar__item--active">⬛ Dashboard</div>
+              <div class="sidebar__item">📋 Projects</div>
+              <div class="sidebar__item">✓ My Tasks</div>
+              <div class="sidebar__item">👥 Team</div>
+              <div class="sidebar__item">📊 Reports</div>
+            </div>
+          </div>
+          <!-- Main area -->
+          <div class="mockup__main">
+            <div class="mockup__header">
+              <div class="mockup__heading">Q3 Launch Sprint</div>
+              <div class="mockup__header-actions">
+                <div class="mock-btn">+ Add task</div>
+                <div class="mock-avatar">AK</div>
+                <div class="mock-avatar">SR</div>
+                <div class="mock-avatar">PM</div>
+              </div>
+            </div>
+            <!-- Columns -->
+            <div class="mockup__kanban">
+              <div class="kanban__col">
+                <div class="kanban__col-title">To Do <span class="col-count">4</span></div>
+                <div class="task-card">
+                  <div class="task-card__title">Design system tokens</div>
+                  <div class="task-card__meta"><span class="tag tag--blue">Design</span><span class="task-due">Jul 8</span></div>
+                </div>
+                <div class="task-card">
+                  <div class="task-card__title">Write onboarding copy</div>
+                  <div class="task-card__meta"><span class="tag tag--purple">Content</span><span class="task-due">Jul 10</span></div>
+                </div>
+                <div class="task-card task-card--ghost"></div>
+              </div>
+              <div class="kanban__col">
+                <div class="kanban__col-title">In Progress <span class="col-count col-count--amber">3</span></div>
+                <div class="task-card task-card--active">
+                  <div class="task-card__title">Landing page build</div>
+                  <div class="task-card__meta"><span class="tag tag--amber">Dev</span><span class="task-due">Jul 7</span></div>
+                  <div class="task-progress">
+                    <div class="task-progress__bar" style="width:68%"></div>
+                  </div>
+                </div>
+                <div class="task-card">
+                  <div class="task-card__title">API integration</div>
+                  <div class="task-card__meta"><span class="tag tag--amber">Dev</span><span class="task-due">Jul 9</span></div>
+                  <div class="task-progress">
+                    <div class="task-progress__bar" style="width:35%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="kanban__col">
+                <div class="kanban__col-title">Done <span class="col-count col-count--green">6</span></div>
+                <div class="task-card task-card--done">
+                  <div class="task-card__title">User research</div>
+                  <div class="task-card__meta"><span class="tag tag--green">Research</span></div>
+                </div>
+                <div class="task-card task-card--done">
+                  <div class="task-card__title">Competitor analysis</div>
+                  <div class="task-card__meta"><span class="tag tag--green">Research</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- end .mockup -->
+    </div><!-- end .hero__inner -->
+  </section>
+
+  </div><!-- end .hero-scene -->
+
+  <!-- LOGOS STRIP -->
+  <section class="logos">
+    <p class="logos__label">Trusted by teams building the next big thing</p>
+    <div class="logos__strip">
+      <span>Archetype</span>
+      <span>Novalux</span>
+      <span>Stackmind</span>
+      <span>Velosoft</span>
+      <span>Driftware</span>
+      <span>Pulseio</span>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-head">
+      <p class="eyebrow">Features</p>
+      <h2>Everything your team needs.<br>Nothing it doesn't.</h2>
+    </div>
+    <div class="features__grid">
+      <div class="glass-card features__card features__card--large">
+        <div class="features__icon">⚡</div>
+        <h3>Real-time collaboration</h3>
+        <p>Every update, comment, and status change is live — no refreshing, no "did you see my message?" moments.</p>
+      </div>
+      <div class="glass-card features__card">
+        <div class="features__icon">🗂</div>
+        <h3>Kanban & list views</h3>
+        <p>Switch between views without losing context. Work the way your brain works.</p>
+      </div>
+      <div class="glass-card features__card">
+        <div class="features__icon">📊</div>
+        <h3>Progress at a glance</h3>
+        <p>Dashboards that show you what's blocked, what's on track, and what needs attention — instantly.</p>
+      </div>
+      <div class="glass-card features__card">
+        <div class="features__icon">🔔</div>
+        <h3>Smart notifications</h3>
+        <p>Only get pinged when something actually needs you. Prodigy filters the noise.</p>
+      </div>
+      <div class="glass-card features__card features__card--large">
+        <div class="features__icon">🔗</div>
+        <h3>Integrates with your stack</h3>
+        <p>Slack, GitHub, Figma, Notion, Google Drive — Prodigy sits in the middle and ties everything together without replacing anything.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="section-head">
+      <p class="eyebrow">How it works</p>
+      <h2>Up and running in under 5 minutes.</h2>
+    </div>
+    <div class="how__steps">
+      <div class="how__step">
+        <div class="how__step-num">1</div>
+        <div class="how__step-body">
+          <h3>Create your workspace</h3>
+          <p>Sign up, name your workspace, invite your team. No credit card, no setup call, no onboarding maze.</p>
+        </div>
+      </div>
+      <div class="how__connector" aria-hidden="true"></div>
+      <div class="how__step">
+        <div class="how__step-num">2</div>
+        <div class="how__step-body">
+          <h3>Add your projects</h3>
+          <p>Create projects, break them into tasks, assign owners, set deadlines. Takes about two minutes.</p>
+        </div>
+      </div>
+      <div class="how__connector" aria-hidden="true"></div>
+      <div class="how__step">
+        <div class="how__step-num">3</div>
+        <div class="how__step-body">
+          <h3>Ship without the chaos</h3>
+          <p>Your team knows exactly what to do, what's blocked, and what's done. That's it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="section-head">
+      <p class="eyebrow">Pricing</p>
+      <h2>Simple pricing. No surprises.</h2>
+    </div>
+    <div class="pricing__grid">
+      <div class="glass-card pricing__card">
+        <div class="pricing__tier">Free</div>
+        <div class="pricing__price">₹0<span>/mo</span></div>
+        <p class="pricing__desc">For solo builders and tiny teams just getting started.</p>
+        <ul class="pricing__list">
+          <li>✓ Up to 3 projects</li>
+          <li>✓ 5 team members</li>
+          <li>✓ Kanban & list views</li>
+          <li>✓ 1GB storage</li>
+          <li class="muted">✗ Analytics</li>
+          <li class="muted">✗ Priority support</li>
+        </ul>
+        <a href="#" class="btn btn--ghost btn--full">Get started</a>
+      </div>
+      <div class="glass-card pricing__card pricing__card--featured">
+        <div class="pricing__badge">Most popular</div>
+        <div class="pricing__tier">Pro</div>
+        <div class="pricing__price">₹799<span>/mo</span></div>
+        <p class="pricing__desc">For growing teams that need more power and fewer limits.</p>
+        <ul class="pricing__list">
+          <li>✓ Unlimited projects</li>
+          <li>✓ Up to 25 members</li>
+          <li>✓ All views + timeline</li>
+          <li>✓ 50GB storage</li>
+          <li>✓ Analytics dashboard</li>
+          <li class="muted">✗ Priority support</li>
+        </ul>
+        <a href="#" class="btn btn--amber btn--full">Start free trial</a>
+      </div>
+      <div class="glass-card pricing__card">
+        <div class="pricing__tier">Team</div>
+        <div class="pricing__price">₹1,999<span>/mo</span></div>
+        <p class="pricing__desc">For serious teams shipping at scale with full control.</p>
+        <ul class="pricing__list">
+          <li>✓ Unlimited everything</li>
+          <li>✓ Unlimited members</li>
+          <li>✓ Custom workflows</li>
+          <li>✓ 500GB storage</li>
+          <li>✓ Analytics + exports</li>
+          <li>✓ Priority support</li>
+        </ul>
+        <a href="#" class="btn btn--ghost btn--full">Talk to us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="section-head">
+      <p class="eyebrow">What teams say</p>
+      <h2>Built for people who ship.</h2>
+    </div>
+    <div class="testimonials__grid">
+      <figure class="glass-card testimonial">
+        <blockquote>"We cut our weekly standup from 45 minutes to 10 because everyone already knows the status in Prodigy."</blockquote>
+        <figcaption>
+          <div class="testi-avatar">RK</div>
+          <div>
+            <strong>Rohan Kapoor</strong>
+            <span>Head of Product, Novalux</span>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="glass-card testimonial">
+        <blockquote>"Every tool we tried before either had too much or too little. Prodigy is the first one that just fits."</blockquote>
+        <figcaption>
+          <div class="testi-avatar">SM</div>
+          <div>
+            <strong>Sara Mehta</strong>
+            <span>Engineering Lead, Velosoft</span>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="glass-card testimonial">
+        <blockquote>"Onboarded our entire 18-person team in one afternoon. That alone was worth switching."</blockquote>
+        <figcaption>
+          <div class="testi-avatar">AT</div>
+          <div>
+            <strong>Arjun Tiwari</strong>
+            <span>Founder, Stackmind</span>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-banner__glow" aria-hidden="true"></div>
+    <div class="cta-banner__content">
+      <h2>Your next sprint starts here.</h2>
+      <p>Join 4,200+ teams that replaced chaos with clarity. Free to start, no card needed.</p>
+      <a href="#" class="btn btn--amber">Get Prodigy free →</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <p class="nav__logo">Prodigy<span>.</span></p>
+      <p>Less chaos. More done.</p>
+    </div>
+    <div class="footer__links">
+      <div>
+        <h4>Product</h4>
+        <p>Features</p>
+        <p>Pricing</p>
+        <p>Changelog</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <p>About</p>
+        <p>Blog</p>
+        <p>Careers</p>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <p>Twitter / X</p>
+        <p>LinkedIn</p>
+        <p>hello@prodigy.so</p>
+      </div>
+    </div>
+  </div>
+  <p class="footer__bottom">© 2026 Prodigy. Built as a portfolio project by Saksham.</p>
+</footer>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
