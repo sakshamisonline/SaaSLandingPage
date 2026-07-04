@@ -667,6 +667,13 @@ h1, h2, h3 {
 
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
+  /* Pinning is desktop-only now (see script.js matchMedia), so the
+     artificial 300vh scroll runway and fixed 100vh hero height would
+     just leave a dead, empty scroll gap and clip stacked content.
+     Let both size to their actual content instead. */
+  .hero-scene { height: auto; }
+  .hero { height: auto; min-height: 100svh; padding-bottom: 3rem; }
+
   .hero__inner { grid-template-columns: 1fr; padding-top: 4rem; }
   .mockup { transform: none; }
   .features__grid { grid-template-columns: 1fr; }
