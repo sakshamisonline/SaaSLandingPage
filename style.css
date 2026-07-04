@@ -672,15 +672,36 @@ h1, h2, h3 {
      just leave a dead, empty scroll gap and clip stacked content.
      Let both size to their actual content instead. */
   .hero-scene { height: auto; }
-  .hero { height: auto; min-height: 100svh; padding-bottom: 3rem; overflow: hidden; }
-  /* .hero uses overflow:visible on desktop so the 3D-rotated mockup isn't
-     clipped, but that also lets .hero__glow--2 (which is deliberately
-     offset past the right edge for a soft bleed effect) poke past the
-     actual screen width. In-app browsers (Instagram/WhatsApp webviews
-     especially) miscalculate their initial zoom level when ANY element
-     is wider than the viewport, causing the page to open zoomed in and
-     shifted left. Clipping .hero on mobile fixes this — nothing here
-     needs to render outside its bounds once the 3D scroll scene is off.
+  .hero {
+    height: auto;
+    min-height: 100svh;
+    padding-bottom: 3rem;
+    overflow: hidden;
+  }
+
+  /* Mobile hero is simplified: no dashboard mockup, no decorative glow
+     blobs (they were the actual cause of the horizontal overflow/zoom
+     bug — .hero__glow--2 is deliberately positioned past the edge of
+     the screen for a bleed effect on desktop). Just center the
+     tagline + CTA in the viewport. */
+  .mockup,
+  .hero__glow--1,
+  .hero__glow--2,
+  .hero__badge,
+  .hero__social-proof {
+    display: none;
+  }
+
+  .hero__inner {
+    grid-template-columns: 1fr;
+    padding: 5rem 1.5rem 3rem;
+    justify-items: center;
+    text-align: center;
+  }
+  .hero__content { display: flex; flex-direction: column; align-items: center; }
+  .hero__title { max-width: 20ch; }
+  .hero__sub { max-width: 38ch; }
+  .hero__actions { justify-content: center; }
 
   .hero__inner { grid-template-columns: 1fr; padding-top: 4rem; }
   .mockup { transform: none; }
