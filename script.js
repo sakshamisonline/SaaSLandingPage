@@ -9,15 +9,21 @@ heroTl
   .from(".hero__title",       { opacity: 0, y: 40, duration: 0.7 }, "-=0.3")
   .from(".hero__sub",         { opacity: 0, y: 30, duration: 0.6 }, "-=0.4")
   .from(".hero__actions",     { opacity: 0, y: 20, duration: 0.5 }, "-=0.3")
-  .from(".hero__social-proof",{ opacity: 0, duration: 0.4 },        "-=0.2")
-  .from(".mockup", {
+  .from(".hero__social-proof",{ opacity: 0, duration: 0.4 },        "-=0.2");
+
+// Mockup entrance is desktop-only now — it's hidden via CSS (display:
+// none) on mobile, so there's nothing to animate in there.
+gsap.matchMedia().add("(min-width: 901px)", () => {
+  gsap.from(".mockup", {
     opacity: 0,
     y: 60,
     rotateY: -20,
     rotateX: 8,
     duration: 1,
+    delay: 0.9,
     ease: "power2.out"
-  }, "-=0.8");
+  });
+});
 
 // ===== CINEMATIC MOCKUP SCROLL SEQUENCE (desktop only) =====
 // The pinned scroll-scrub sequence below only runs on screens wider
@@ -86,19 +92,9 @@ mm.add("(min-width: 901px)", () => {
     .to(".hero__bg-grid", { opacity: 0, duration: 0.2 }, 0.8);
 });
 
-mm.add("(max-width: 900px)", () => {
-  // No pinning, no scroll-scrub, no horizontal travel. The mockup just
-  // sits in normal document flow (below the hero text) and gets a plain
-  // fade/slide-up the first time it enters the viewport — same visual
-  // language as every other section's reveal animation on this page.
-  gsap.from(".mockup", {
-    scrollTrigger: { trigger: ".mockup", start: "top 90%" },
-    opacity: 0,
-    y: 40,
-    duration: 0.7,
-    ease: "power2.out"
-  });
-});
+// Below 900px the mockup is hidden entirely via CSS (display: none) —
+// simpler hero showing just tagline + CTA — so there's no mobile
+// animation branch needed for it anymore.
 
 // Web fonts (e.g. Miranda Sans) can load and reflow the page after
 // ScrollTrigger has already measured everything. Doing one clean,
